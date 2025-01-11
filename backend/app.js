@@ -13,7 +13,7 @@ const app = express();
 
 // Enable CORS for all routes
 app.use(cors({
-  origin: "http://localhost:3000", // The frontend URL
+  origin: "https://ticketghar-covl.onrender.com" // The frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true, 
 }));

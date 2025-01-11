@@ -13,10 +13,11 @@ const app = express();
 
 // Enable CORS for all routes
 app.use(cors({
-  origin: "https://ticketghar-covl.onrender.com" // The frontend URL
+  origin: ["http://localhost:3000", "https://ticketghar.netlify.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true, 
+  credentials: true,
 }));
+
 
 app.use(express.json());
 app.use("/user", userRouter);
